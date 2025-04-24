@@ -8,7 +8,6 @@ import DeleteStudent from "./pages/DeleteStudent";
 import UpdateStudent from "./pages/UpdateStudent";
 import StudentList from "./pages/StudentList";
 import ContactForm from "./pages/Contact";
-import Signup from "./pages/signup";
 function App() {
   return (
     <Router>
