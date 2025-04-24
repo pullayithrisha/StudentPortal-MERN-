@@ -1,0 +1,72 @@
+/* Default styling for cards on larger screens (laptop/desktop) */
+.card {
+    margin-bottom: 20px;
+    height: 200px;  /* Adjust height as per requirement */
+}
+
+.card-body {
+    padding: 10px;  /* Default padding for card body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-md-3 {
+    flex: 0 0 100%;  /* Cards take full width on mobile */
+    margin-bottom: 15px; /* Add space between stacked cards */
+  }
+
+  /* Reduce card size */
+  .card {
+    font-size: 14px; /* Reduce text size */
+    padding: 10px;   /* Reduce padding inside cards */
+    height: 150px;   /* Further reduce the height of cards on mobile */
+  }
+
+  /* Remove text content inside the card */
+  .card-body p {
+    display: none;  /* Hide the text inside the card */
+  }
+
+  /* Title and icon next to each other */
+  .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+  }
+
+  .card-title h5 {
+    margin-left: 10px; /* Space between icon and title */
+  }
+
+  /* Icon inside card */
+  .card-body .FaUserAlt,
+  .card-body .FaUserPlus,
+  .card-body .FaTrashAlt,
+  .card-body .FaEdit {
+    font-size: 30px; /* Smaller icon size */
+  }
+
+  /* Adjust the button with icon next to it */
+  .btn {
+    font-size: 15px;  /* Reduce button text size */
+    padding: 6px 12px; /* Adjust button padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn svg {
+    margin-left: 5px; /* Space between button text and icon */
+  }
+}

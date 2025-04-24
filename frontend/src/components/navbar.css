@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .navbar .container-fluid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar .navbar-brand {
+      order: 1;
+      text-align: center;
+    }
+  
+    .nav-links {
+      order: 2;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      gap: 20px;
+      margin-top: 10px;
+    }
+  }
+  

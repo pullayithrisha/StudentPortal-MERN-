@@ -1,0 +1,16 @@
+/* Mobile view table adjustments */
+@media (max-width: 768px) {
+    table.table {
+      font-size: 12px;  /* Make table text smaller */
+    }
+  
+    table.table th,
+    table.table td {
+      padding: 6px 8px; /* Reduce cell padding */
+    }
+  
+    h3 {
+      font-size: 18px;  /* Optionally reduce heading size */
+    }
+  }
+  
