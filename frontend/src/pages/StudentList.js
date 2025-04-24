@@ -4,7 +4,7 @@ function StudentList() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/students")
+    fetch("https://studentportal-backend-8gjk.onrender.com")
       .then((res) => res.json())
       .then((data) => setStudents(data))
       .catch((err) => {
