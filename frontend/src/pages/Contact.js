@@ -9,7 +9,7 @@ function ContactForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:5000/contact', {
+      const res = await fetch('https://studentportal-backend-8gjk.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
