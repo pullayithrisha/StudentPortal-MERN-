@@ -23,7 +23,7 @@ function AddStudent() {
     e.preventDefault();
     const studentData = { name, email, rollno, branch };
     try {
-      const response = await fetch("https://studentportal-backend-8gjk.onrender.com", {
+      const response = await fetch("https://studentportal-backend-8gjk.onrender.com/students", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
