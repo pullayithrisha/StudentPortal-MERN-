@@ -20,7 +20,7 @@ function UpdateStudent() {
     if (branch) updatedFields.branch = branch;
 
     try {
-      const response = await fetch(`http://localhost:5000/students/update/${rollno}`, {
+      const response = await fetch(`https://studentportal-backend-8gjk.onrender.com/students/update/${rollno}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
