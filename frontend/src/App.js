@@ -19,7 +19,6 @@ function App() {
         <Route path="/updatestudent" element={<UpdateStudent />} />
         <Route path="/studentlist" element={<StudentList />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path='/signup' element={<Signup/>}/>
       </Routes>
     </Router>
   );
