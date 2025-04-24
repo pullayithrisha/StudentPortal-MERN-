@@ -10,7 +10,7 @@ function DeleteStudent() {
   const handleDelete = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/students/delete", {
+      const response = await fetch("https://studentportal-backend-8gjk.onrender.com", {
         method: "DELETE", 
         headers: {
           "Content-Type": "application/json",
