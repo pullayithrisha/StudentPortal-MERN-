@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv').config(); // 🔹 Load variables from .env
 
 // Import the Student model
 const Student = require('./models/student'); // Adjust path as necessary
@@ -15,8 +16,7 @@ app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON bodies
 
 // MongoDB connection
-const mongoURI = 'mongodb+srv://pullayithrisha:thrisha_2005@crud.4zvvlm7.mongodb.net/StudentPortal?retryWrites=true&w=majority&appName=CRUD';
-mongoose.connect(mongoURI)
+mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         console.log("MongoDB connected successfully");
     })
@@ -100,7 +100,7 @@ app.post('/contact', async (req, res) => {
     }
   });
 // Server start
-const PORT = 5000;
+const PORT = process.env.PORT|| 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
