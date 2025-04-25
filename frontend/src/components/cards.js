@@ -48,13 +48,12 @@ function Cards() {
             </div>
             <div className="card-body">
               <p className="card-text mt-3">
-                Remove a student's record from the portal. Please proceed with caution as this action is permanent.
+                Remove student's record from the portal.Please proceed with caution this action is permanent.
               </p>
               <Link className="btn" style={{ backgroundColor: '#9b2226', color: 'white' }} to="/deletestudent">Delete Student</Link>
             </div>
           </div>
-        </div>
-
+        </div>    
         {/* Update Student Card */}
         <div className="col-md-3">
           <div className="text-white p-3 text-center" style={{ backgroundColor: '#f39c12', borderRadius: '10px' }}>
